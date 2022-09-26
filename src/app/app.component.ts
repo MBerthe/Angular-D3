@@ -36,13 +36,10 @@ export class AppComponent implements OnInit {
       .data(data)
       .enter()
       .append('g')
-      .attr(
-        'transform',
-        (d: number, i: number) => 'translate(' + (50) + ',100)'
-      );
+      .attr('transform', (d: number, i: number) => 'translate(' + 50 + ',100)');
 
     charts.append('path').attr('d', backgroundArc).attr('fill', '#ccc');
 
-    charts.append('path').attr('d', mainArc).attr('fill', 'orange');
+    charts.append('path').attr('d', mainArc).attr('fill', '#99cffc');
   }
 }
